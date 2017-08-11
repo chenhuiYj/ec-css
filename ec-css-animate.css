@@ -1,0 +1,738 @@
+/*version 1.0.0*/
+/*动画效果*/
+.ec-bounce-in-l {
+    animation: bounce-in-l 1s ease;
+}
+@keyframes bounce-in-l {
+    0%, 60%, 75%, 90%, to {
+        animation-timing-function: cubic-bezier(.215, .61, .355, 1)
+    }
+    0% {
+        opacity: 0;
+        transform: translate3d(-3000px, 0, 0)
+    }
+    60% {
+        opacity: 1;
+        transform: translate3d(25px, 0, 0)
+    }
+    75% {
+        transform: translate3d(-10px, 0, 0)
+    }
+    90% {
+        transform: translate3d(5px, 0, 0)
+    }
+    to {
+        -webkit-transform: none;
+        transform: none
+    }
+}
+.ec-bounce-in-r {
+    animation: bounce-in-r 1s ease;
+}
+@keyframes bounce-in-r {
+    0%, 60%, 75%, 90%, to {
+        animation-timing-function: cubic-bezier(.215, .61, .355, 1)
+    }
+    0% {
+        opacity: 0;
+        transform: translate3d(3000px, 0, 0)
+    }
+    60% {
+        opacity: 1;
+        transform: translate3d(-25px, 0, 0)
+    }
+    75% {
+        transform: translate3d(10px, 0, 0)
+    }
+    90% {
+        transform: translate3d(-5px, 0, 0)
+    }
+    to {
+        -webkit-transform: none;
+        transform: none
+    }
+}
+.ec-bounce-in-b{
+    animation: bounce-in-b 1s;
+}
+.ec-bounce-in-t{
+    animation: bounce-in-t 1s;
+}
+@keyframes bounce-in-t {
+    from, 60%, 75%, 90%, to {
+        animation-timing-function: cubic-bezier(0.215, 0.610, 0.355, 1.000);
+    }
+
+    0% {
+        opacity: 0;
+        transform: translate3d(0, -3000px, 0);
+    }
+
+    60% {
+        opacity: 1;
+        transform: translate3d(0, 25px, 0);
+    }
+
+    75% {
+        transform: translate3d(0, -10px, 0);
+    }
+
+    90% {
+        transform: translate3d(0, 5px, 0);
+    }
+
+    to {
+        transform: none;
+    }
+}
+@keyframes bounce-in-b{
+    from, 60%, 75%, 90%, to {
+        animation-timing-function: cubic-bezier(0.215, 0.610, 0.355, 1.000);
+    }
+
+    0% {
+        opacity: 0;
+        transform: translate3d(0, 3000px, 0);
+    }
+
+    60% {
+        opacity: 1;
+        transform: translate3d(0, -25px, 0);
+    }
+
+    75% {
+        transform: translate3d(0, 10px, 0);
+    }
+
+    90% {
+        transform: translate3d(0, -5px, 0);
+    }
+
+    to {
+        transform: none;
+    }
+}
+@keyframes bounce-out-b {
+    20% {
+        transform: translate3d(0, 10px, 0);
+    }
+
+    40%, 45% {
+        opacity: 1;
+        transform: translate3d(0, -20px, 0);
+    }
+
+    to {
+        opacity: 0;
+        transform: translate3d(0, 2000px, 0);
+    }
+}
+
+.ec-bounce-out-b {
+    animation: bounce-out-b 1s;
+}
+
+@keyframes bounce-out-l {
+    20% {
+        opacity: 1;
+        transform: translate3d(20px, 0, 0);
+    }
+
+    to {
+        opacity: 0;
+        transform: translate3d(-2000px, 0, 0);
+    }
+}
+
+.ec-bounce-out-l {
+    animation: bounce-out-l 1s;
+}
+
+@keyframes bounce-out-r {
+    20% {
+        opacity: 1;
+        transform: translate3d(-20px, 0, 0);
+    }
+
+    to {
+        opacity: 0;
+        transform: translate3d(2000px, 0, 0);
+    }
+}
+
+.ec-bounce-out-r {
+    animation: bounce-out-r 1s;
+}
+
+@keyframes bounce-out-t {
+    20% {
+        transform: translate3d(0, -10px, 0);
+    }
+
+    40%, 45% {
+        opacity: 1;
+        transform: translate3d(0, 20px, 0);
+    }
+
+    to {
+        opacity: 0;
+        transform: translate3d(0, -2000px, 0);
+    }
+}
+
+.ec-bounce-out-t {
+    animation: bounce-out-t 1s;
+}
+
+/*心跳效果*/
+.ec-pulse {
+    animation: pulse 1s linear;
+}
+.ec-pulse-shrink {
+    animation: pulse .5s linear;
+}
+@keyframes pulse {
+    25% {
+        transform: scale(1.1);
+    }
+    75% {
+        transform: scale(0.9);
+    }
+}
+.ec-flash {
+    animation: flash .5s ease;
+}
+/*摇摆*/
+.ec-swing {
+    animation: swing .5s ease;
+}
+@keyframes swing {
+    20% {
+        transform: rotate(15deg);
+    }
+    40% {
+        transform: rotate(-10deg);
+    }
+    60% {
+        transform: rotate(5deg);
+    }
+    80% {
+        transform: rotate(-5deg);
+    }
+    100% {
+        transform: rotate(0);
+    }
+}
+/*摇摆*/
+.ec-wobble-t{
+    transform-origin: 0 100%;
+}
+
+.ec-wobble-b{
+    transform-origin: 100% 0;
+}
+
+.ec-wobble,.ec-wobble-t,.ec-wobble-b {
+    animation: wobblex 1s ease-in-out;
+}
+
+@keyframes wobblex {
+    16.65% {
+        -webkit-transform: skew(-12deg);
+        transform: skew(-12deg);
+    }
+    33.3% {
+        -webkit-transform: skew(10deg);
+        transform: skew(10deg);
+    }
+    49.95% {
+        -webkit-transform: skew(-6deg);
+        transform: skew(-6deg);
+    }
+    66.6% {
+        -webkit-transform: skew(4deg);
+        transform: skew(4deg);
+    }
+    83.25% {
+        -webkit-transform: skew(-2deg);
+        transform: skew(-2deg);
+    }
+    100% {
+        -webkit-transform: skew(0);
+        transform: skew(0);
+    }
+}
+/*闪烁*/
+@keyframes flash {
+    0%, 50%, 100% {
+        opacity: 1;
+    }
+    25%, 75% {
+        opacity: 0;
+    }
+}
+.ec-rubber-band {
+    animation: rubber-band 1s;
+}
+.ec-rubber-band-fast {
+    animation: rubber-band .5s;
+}
+@keyframes rubber-band {
+    from {
+        transform: scale3d(1, 1, 1);
+    }
+
+    30% {
+        transform: scale3d(1.25, 0.75, 1);
+    }
+
+    40% {
+        transform: scale3d(0.75, 1.25, 1);
+    }
+
+    50% {
+        transform: scale3d(1.15, 0.85, 1);
+    }
+
+    65% {
+        transform: scale3d(.95, 1.05, 1);
+    }
+
+    75% {
+        transform: scale3d(1.05, .95, 1);
+    }
+
+    to {
+        transform: scale3d(1, 1, 1);
+    }
+}
+/*仿闹钟振铃效果*/
+.ec-shake-time{
+    animation: shake-time 1s ease;
+}
+
+@keyframes shake-time {
+    0% {
+        transform: scale(1);
+    }
+    10%, 20% {
+        transform: scale(0.9) rotate(-3deg);
+    }
+    30%, 50%, 70%, 90% {
+        transform: scale(1.1) rotate(3deg);
+    }
+    40%, 60%, 80% {
+        transform: scale(1.1) rotate(-3deg);
+    }
+    100% {
+        transform: scale(1) rotate(0);
+    }
+}
+
+/*弹跳变化*/
+.ec-bounce{
+    animation: bounce 1s ease;
+}
+
+@keyframes bounce {
+    0%, 20%, 50%, 80%, 100% {
+        transform: translateY(0);
+    }
+    40% {
+        transform: translateY(-30px);
+    }
+    60% {
+        transform: translateY(-15px);
+    }
+}
+
+/*震动*/
+.ec-shake {
+    animation: shake .5s ease;
+}
+
+@keyframes shake {
+    0%, 100% {
+        transform: translateX(0);
+    }
+    10%, 30%, 50%, 70%, 90% {
+        transform: translateX(-10px);
+    }
+    20%, 40%, 60%, 80% {
+        transform: translateX(10px);
+    }
+}
+/*透明度进入*/
+@keyframes fade-in {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+.ec-fade-in {
+    animation: fade-in 1s;
+}
+
+@keyframes ec-fade-in-b {
+    from {
+        opacity: 0;
+        transform: translate3d(0, -100%, 0);
+    }
+
+    to {
+        opacity: 1;
+        transform: none;
+    }
+}
+
+.ec-fade-in-b {
+    animation: ec-fade-in-b 1s;
+}
+
+@keyframes ec-fade-in-l {
+    from {
+        opacity: 0;
+        transform: translate3d(-100%, 0, 0);
+    }
+
+    to {
+        opacity: 1;
+        transform: none;
+    }
+}
+
+.ec-fade-in-l {
+    animation: ec-fade-in-l 1s;
+}
+
+@keyframes ec-fade-in-r {
+    from {
+        opacity: 0;
+        transform: translate3d(100%, 0, 0);
+    }
+
+    to {
+        opacity: 1;
+        transform: none;
+    }
+}
+
+.ec-fade-in-r {
+    animation: ec-fade-in-r 1s;
+}
+
+@keyframes ec-fade-in-t {
+    from {
+        opacity: 0;
+        transform: translate3d(0, 100%, 0);
+    }
+
+    to {
+        opacity: 1;
+        transform: none;
+    }
+}
+
+.ec-fade-in-t {
+    animation: ec-fade-in-t 1s;
+}
+
+@keyframes ec-fade-out {
+    from {
+        opacity: 1;
+    }
+
+    to {
+        opacity: 0;
+    }
+}
+
+.ec-fade-out {
+    animation: ec-fade-out 1s;
+}
+
+@keyframes ec-fade-out-b {
+    from {
+        opacity: 1;
+    }
+
+    to {
+        opacity: 0;
+        transform: translate3d(0, 100%, 0);
+    }
+}
+
+.ec-fade-out-b {
+    animation: ec-fade-out-b 1s;
+}
+
+@keyframes ec-fade-out-l {
+    from {
+        opacity: 1;
+    }
+
+    to {
+        opacity: 0;
+        transform: translate3d(-100%, 0, 0);
+    }
+}
+
+.ec-fade-out-l {
+    animation: ec-fade-out-l 1s;
+}
+
+
+@keyframes ec-fade-out-r {
+    from {
+        opacity: 1;
+    }
+
+    to {
+        opacity: 0;
+        transform: translate3d(100%, 0, 0);
+    }
+}
+
+.ec-fade-out-r {
+    animation: ec-fade-out-r 1s;
+}
+
+@keyframes ec-fade-out-t {
+    from {
+        opacity: 1;
+    }
+
+    to {
+        opacity: 0;
+        transform: translate3d(0, -100%, 0);
+    }
+}
+
+.ec-fade-out-t {
+    animation: ec-fade-out-t 1s;
+}
+/*旋转进出*/
+@keyframes rotate-in{
+    0%{opacity:0;transform:rotate(-200deg);}
+    100%{opacity:1;transform:rotate(0);}
+}
+.ec-rotate-in {
+    animation: rotate-in 1s;
+}
+@keyframes rotate-in-lt{
+    0%{transform-origin:left bottom;transform:rotate(-90deg);opacity:0;}
+    100%{transform-origin:left bottom;transform:rotate(0);opacity:1;}
+}
+.ec-rotate-in-lt {
+    animation: rotate-in-lt 1s;
+}
+@keyframes rotate-in-lb{
+    0%{transform-origin:left bottom;transform:rotate(90deg);opacity:0;}
+    100%{transform-origin:left bottom;transform:rotate(0);opacity:1;}
+}
+.ec-rotate-in-lb {
+    animation: rotate-in-lb 1s;
+}
+@keyframes rotate-in-rt{
+    0%{transform-origin:right bottom;transform:rotate(90deg);opacity:0;}
+    100%{transform-origin:right bottom;transform:rotate(0);opacity:1;}
+}
+.ec-rotate-in-rt {
+    animation: rotate-in-rt 1s;
+}
+@keyframes rotate-in-rb{
+    0%{transform-origin:right bottom;transform:rotate(-90deg);opacity:0;}
+    100%{transform-origin:right bottom;transform:rotate(0);opacity:1;}
+}
+.ec-rotate-in-rb {
+    animation: rotate-in-rb 1s;
+}
+
+.ec-rotate-out {
+    animation: rotate-out 1s;
+}
+@keyframes rotate-out{
+    0%{transform-origin:center center;transform:rotate(0);opacity:1;}
+    100%{transform-origin:center center;transform:rotate(200deg);opacity:0;}
+}
+.ec-rotate-out-lt {
+    animation: rotate-out-lt 1s;
+}
+@keyframes rotate-out-lt{
+    0%{transform-origin:left bottom;transform:rotate(0);opacity:1;}
+    100%{transform-origin:left bottom;transform:rotate(-90deg);opacity:0;}
+}
+.ec-rotate-out-lb {
+    animation: rotate-out-lb 1s;
+}
+@keyframes rotate-out-lb{
+    0%{transform-origin:left bottom;transform:rotate(0);opacity:1;}
+    100%{transform-origin:left bottom;transform:rotate(90deg);opacity:0;}
+}
+.ec-rotate-out-rt {
+    animation: rotate-out-rt 1s;
+}
+@keyframes rotate-out-rt{
+    0%{transform-origin:right bottom;transform:rotate(0);opacity:1;}
+    100%{transform-origin:right bottom;transform:rotate(90deg);opacity:0;}
+}
+.ec-rotate-out-rb {
+    animation: rotate-out-rb 1s;
+}
+@keyframes rotate-out-rb{
+    0%{transform-origin:right bottom;transform:rotate(0);opacity:1;}
+    100%{transform-origin:right bottom;transform:rotate(-90deg);opacity:0;}
+}
+/*翻转进出*/
+@keyframes flip-in-x {
+    from {
+        transform: perspective(400px) rotate3d(1, 0, 0, 90deg);
+        animation-timing-function: ease-in;
+        opacity: 0;
+    }
+
+    40% {
+        transform: perspective(400px) rotate3d(1, 0, 0, -20deg);
+        animation-timing-function: ease-in;
+    }
+
+    60% {
+        transform: perspective(400px) rotate3d(1, 0, 0, 10deg);
+        opacity: 1;
+    }
+
+    80% {
+        transform: perspective(400px) rotate3d(1, 0, 0, -5deg);
+    }
+
+    to {
+        transform: perspective(400px);
+    }
+}
+
+.ec-flip-in-x {
+    animation: flip-in-x 1s;
+}
+
+@keyframes flip-in-y {
+    from {
+        transform: perspective(400px) rotate3d(0, 1, 0, 90deg);
+        animation-timing-function: ease-in;
+        opacity: 0;
+    }
+
+    40% {
+        transform: perspective(400px) rotate3d(0, 1, 0, -20deg);
+        animation-timing-function: ease-in;
+    }
+
+    60% {
+        transform: perspective(400px) rotate3d(0, 1, 0, 10deg);
+        opacity: 1;
+    }
+
+    80% {
+        transform: perspective(400px) rotate3d(0, 1, 0, -5deg);
+    }
+
+    to {
+        transform: perspective(400px);
+    }
+}
+
+.ec-flip-in-y {
+    animation: flip-in-y 1s;
+}
+
+@keyframes flip-out-x {
+    from {
+        transform: perspective(400px);
+    }
+
+    30% {
+        transform: perspective(400px) rotate3d(1, 0, 0, -20deg);
+        opacity: 1;
+    }
+
+    to {
+        transform: perspective(400px) rotate3d(1, 0, 0, 90deg);
+        opacity: 0;
+    }
+}
+
+.ec-flip-out-x {
+    animation: flip-out-x 1s;
+}
+
+@keyframes flip-out-y {
+    from {
+        transform: perspective(400px);
+    }
+
+    30% {
+        transform: perspective(400px) rotate3d(0, 1, 0, -15deg);
+        opacity: 1;
+    }
+
+    to {
+        transform: perspective(400px) rotate3d(0, 1, 0, 90deg);
+        opacity: 0;
+    }
+}
+
+.ec-flip-out-y {
+    animation: flip-out-y 1s;
+}
+
+@keyframes light-speed-in {
+    from {
+        transform: translate3d(100%, 0, 0) skewX(-30deg);
+        opacity: 0;
+    }
+
+    60% {
+        transform: skewX(20deg);
+        opacity: 1;
+    }
+
+    80% {
+        transform: skewX(-5deg);
+        opacity: 1;
+    }
+
+    to {
+        transform: none;
+        opacity: 1;
+    }
+}
+
+.ec-light-speed-in {
+    animation: light-speed-in 1s ease-out;
+}
+
+@keyframes light-speed-out {
+    from {
+        opacity: 1;
+    }
+
+    to {
+        transform: translate3d(100%, 0, 0) skewX(30deg);
+        opacity: 0;
+    }
+}
+
+.ec-light-speed-out {
+    animation: light-speed-out ease-in 1s;
+}
+/*无限次数执行动画*/
+.ec-infinite{
+    animation-iteration-count: infinite;
+}
+
+.ec-alternate {
+    animation-direction: alternate;
+}

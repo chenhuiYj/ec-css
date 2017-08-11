@@ -1,0 +1,19 @@
+{
+  "name": "ec-css",
+  "version": "1.0.0",
+  "description": "ec-css ",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "browser-sync start --server --files '*.css,*.html'"
+  },
+  "devDependencies": {
+    "browser-sync": "^2.18.12",
+    "gulp": "^3.9.1",
+    "gulp-clean-css": "^3.7.0",
+    "gulp-sass": "^3.1.0",
+    "node-sass": "^4.5.3"
+  },
+  "author": "chen",
+  "license": "ISC"
+}

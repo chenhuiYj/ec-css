@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>demo</title>
+    <link rel="stylesheet" href="reset.css">
+    <link rel="stylesheet" href="ec-css-hover.css">
+    <style>
+        .hover-box{
+            max-width: 1200px;
+            margin: 20px auto;
+        }
+        .hover-box p{
+            line-height: 50px;
+        }
+        .hover-box span{
+            cursor: pointer;
+            height: 40px;
+            line-height: 40px;
+            text-align: center;
+            display: inline-block;
+            color: #333;
+            background: #ccc;
+            min-width: 80px;
+            padding: 0 10px;
+            margin: 10px;
+        }
+
+    </style>
+</head>
+<body>
+<div class="hover-box">
+    <p>几个组合效果</p>
+    <span class="ech-arrow-b-move ech-shadow">arrow-b</span>
+    <span class="ech-radius ech-shadow">radius</span>
+    <span class="ech-fade-m-out ech-shadow">fade-m-out</span>
+</div>
+<div class="hover-box">
+    <p>鼠标效果 简单动画(hover effect)</p>
+    <span class="ech-rectangle">rectangle</span>
+    <span class="ech-radius">radius</span>
+    <span class="ech-border">border</span>
+    <span class="ech-big">big</span>
+    <span class="ech-small">small</span>
+    <span class="ech-border-in">border-in</span>
+    <span class="ech-shadow">shadow</span>
+    <span class="ech-shadow-in">shadow-in</span>
+    <span class="ech-shadow-write">shadow-write</span>
+    <span class="ech-shadow-big">shadow-big</span>
+    <span class="ech-fade-out">fade-out</span>
+    <span class="ech-fade-in">fade-in</span>
+    <span class="ech-t">up</span>
+    <span class="ech-b">bottom</span>
+    <span class="ech-l">left</span>
+    <span class="ech-r">right</span>
+    <span class="ech-grow-rotate-l">grow-rotate-l</span>
+    <span class="ech-grow-rotate-r">grow-rotate-r</span>
+    <span class="ech-rotate5">rotate5</span>
+    <span class="ech-rotate15">rotate15</span>
+    <span class="ech-rotate30">rotate30</span>
+    <span class="ech-rotate60">rotate60</span>
+    <span class="ech-rotate90">rotate90</span>
+    <span class="ech-rotate180">rotate180</span>
+    <span class="ech-rotate360">rotate360</span>
+    <span class="ech-rotate-5">rotate-5</span>
+    <span class="ech-rotate-15">rotate-15</span>
+    <span class="ech-rotate-30">rotate-30</span>
+    <span class="ech-rotate-60">rotate-60</span>
+    <span class="ech-rotate-90">rotate-90</span>
+    <span class="ech-rotate-180">rotate-180</span>
+    <span class="ech-skew-l">skew-l</span>
+    <span class="ech-skew-r">skew-r</span>
+    <span class="ech-skew-l-t">skew-l-t</span>
+    <span class="ech-skew-r-t">skew-r-t</span>
+    <span class="ech-skew-l-b">skew-l-b</span>
+    <span class="ech-skew-r-b">skew-r-b</span>
+</div>
+<div class="hover-box">
+    <p>鼠标颜色效果(主要利用:after  :before实现)</p>
+    <span class="ech-fade">fade</span>
+    <span class="ech-fade-t">fade-t</span>
+    <span class="ech-fade-b">fade-b</span>
+    <span class="ech-fade-l">fade-l</span>
+    <span class="ech-fade-r">fade-r</span>
+    <span class="ech-bounce-t">bounce-t</span>
+    <span class="ech-bounce-b">bounce-b</span>
+    <span class="ech-bounce-l">bounce-l</span>
+    <span class="ech-bounce-r">bounce-r</span>
+	<span class="ech-fade-c-out">fade-c-out</span>
+    <span class="ech-fade-c-in">fade-c-in</span>
+    <span class="ech-fade-m-out">fade-m-out</span>
+    <span class="ech-fade-m-in">fade-m-in</span>
+    <span class="ech-overline-l">overline-l</span>
+    <span class="ech-overline-r">overline-r</span>
+    <span class="ech-underline-l">underline-l</span>
+    <span class="ech-underline-r">underline-r</span>
+    <span class="ech-underline-c">underline-c</span>
+    <span class="ech-underline-c-out">underline-c-out</span>
+    <span class="ech-overline-c">overline-c</span>
+    <span class="ech-overline-c-out">overline-c-out</span>
+</div>
+<div class="hover-box">
+    <p>鼠标效果 较复杂动画(hover effect)</p>
+    <span class="ech-shake-time">shake-time</span>
+    <span class="ech-bounce">bounce</span>
+    <span class="ech-wobble">wobble</span>
+    <span class="ech-swing">swing</span>
+    <span class="ech-shake">shake</span>
+    <span class="ech-flash">flash</span>
+    <span class="ech-wobble-c">wobble-c</span>
+    <span class="ech-wobble-t">wobble-t</span>
+    <span class="ech-wobble-b">wobble-b</span>
+</div>
+<div class="hover-box">
+    <p>鼠标效果 较复杂动画-无限执行(hover effect)</p>
+    <span class="ech-pulse">pulse</span>
+    <span class="ech-pulse-shrink">pulse-shrink</span>
+    <span class="ech-swing  ech-infinite">swing-infinite</span>
+    <span class="ech-shake-time ech-infinite">shake-time-infinite</span>
+    <span class="ech-shake ech-infinite">shake-infinite</span>
+    <span class="ech-flash ech-infinite">flash-infinite</span>
+</div>
+<div class="hover-box">
+    <p>鼠标效果 箭头效果</p>
+    <span class="ech-arrow-l">arrow-l</span>
+    <span class="ech-arrow-r">arrow-r</span>
+    <span class="ech-arrow-t">arrow-t</span>
+    <span class="ech-arrow-b">arrow-b</span>
+    <span class="ech-arrow-l-move">arrow-l</span>
+    <span class="ech-arrow-r-move">arrow-r</span>
+    <span class="ech-arrow-t-move">arrow-t</span>
+    <span class="ech-arrow-b-move">arrow-b</span>
+</div>
+</body>
+</html>
