@@ -31,13 +31,11 @@
 }
 
 .ech-skew-l-b:hover {
-    transform: skew(-15deg);
-    transform-origin: 100% 0;
+    transform: skew(15deg);
 }
 
 .ech-skew-r-b:hover {
-    transform: skew(15deg);
-    transform-origin: 100% 0;
+    transform: skew(-15deg);
 }
 
 /*旋转*/
